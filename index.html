@@ -10,21 +10,24 @@
 <body>
     <div class="p-4 container">
         <div class="row">
-            <div class="col">
-                <button id="share" class="btn btn-primary m-2">Share my mic</button>
-                <button id="show-video" class="btn btn-success m-2">Show My Video</button>
-                <button id="stop-video" class="btn btn-danger m-2">Stop My Video</button>
-            </div>
-            <div class="col">
-                <div class="videos">
-                    <h1>Host Feed</h1>
-                    <video id="my-video" class="video" autoplay playsinline></video>
-                </div>
-            </div>
-            <div class="col">
-                <div class="videos">
-                    <h1>Guest Feed</h1>
-                    <video id="other-video" class="video" autoplay playsinline></video>
+                <div class="col"><button id="share" class="btn btn-primary m-1">Start Sharing</button></div>
+                <div class="col"><button id="show-video" class="btn btn-info m-1">Show My Video</button></div>
+                <div class="col"><button id="stop-video" class="btn btn-danger m-1">Stop Sharing</button></div>
+                <div class="col"><button id="start-recording" class="btn btn-warning m-1">Start Recording</button></div>
+                <div class="col"><button id="stop-recording" class="btn btn-danger m-1">Stop Recording</button></div>
+                <div class="col"><button id="play-recording" class="btn btn-success m-1">Play Recording</button></div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-white">
+                        <h1>Hostess Live</h1>
+                        <video id="my-video" class="video" autoplay playsinline></video>
+                    </div>
+                    <div class="col text-white">
+                        <h1>Hostess Recording</h1>
+                        <video id="other-video" class="video" autoplay playsinline></video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,6 +36,7 @@
     <!-- JS Scripts -->
     <script src="index.js"></script>
     <script src="changeVideoSize.js"></script>
+    <script src="screenRecorder.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
